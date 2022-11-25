@@ -1,0 +1,57 @@
+.kXteup:hover:enabled,
+.kXteup:focus:enabled {
+  background-color: #336a89 !important;
+}
+.cVXxbE {
+  background-color: rgb(51 106 137 / 50%) !important;
+  box-shadow: 0 0 1px 3px #336a89 !important;
+}
+.carousel {
+  margin-top: 1%;
+  margin-inline: 1%;
+}
+.proyect {
+  display: flex;
+  flex-direction: column;
+  border: inset #336a89 5px;
+  border-radius: 24px;
+  padding: 1%;
+  min-height: 300px;
+}
+.proyect-title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: 1%;
+  line-height: 100%;
+}
+.proyect .container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .proyect .container {
+    flex-direction: column;
+  }
+}
+
+.proyect .container .image {
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  border: solid 3px gray;
+}
+.proyect .container .description {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: solid 3px gray;
+  margin-inline: 1%;
+  padding-inline: 2%;
+  text-align: justify;
+}
+.proyect .container .description .logo {
+  display: flex;
+  justify-content: space-between;
+}
