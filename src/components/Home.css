@@ -1,0 +1,49 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../assets/wallpaper.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  width: calc(100vw - 20px);
+}
+.home .card {
+  justify-content: center;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+@media only screen and (min-width: 1250px) {
+  .home .card {
+    margin-left: 6%;
+    margin-top: 6%;
+  }
+}
+
+.profile {
+  border-radius: 53% 53% 35% 35%;
+  width: 39%;
+}
+
+.menu {
+  border-top: solid 0.1px;
+  margin-top: 5%;
+  opacity: 0.9;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1%;
+  margin: 0.3%;
+  border-radius: 35%;
+  color: white;
+}
+
+.menu a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
