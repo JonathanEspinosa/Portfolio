@@ -14,7 +14,7 @@ function Home() {
         </div>
 
         <div style={{ margin: "auto" }}>
-          <button onClick={() => {}}>Sobre mí</button>
+          {/* <button onClick={() => {}}>Sobre mí</button> */}
         </div>
       </div>
 
