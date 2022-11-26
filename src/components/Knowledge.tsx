@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Language, Framework_DB, Others, Icarousel } from "./common/Common";
 import "./Knowledge.css";
@@ -45,13 +46,26 @@ const carousel: Icarousel[] = [
     ],
   },
 ];
-
 function Knowledge() {
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+  const handleResize = () => {
+    console.log("event");
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="knowledge">
-      {carousel.map((item) => {
-        return <KnowledgeCarousel key={uuidv4()} {...item} />;
-      })}
+      {carousel.map((item) => (
+        <KnowledgeCarousel key={uuidv4()} {...item} windowSize={windowSize} />
+      ))}
     </div>
   );
 }

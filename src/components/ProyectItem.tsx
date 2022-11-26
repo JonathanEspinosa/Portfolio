@@ -30,7 +30,7 @@ function ProyectItem(proyect: Iproyect) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="logo" height={50} src={Others.gitHubImg} />
+                <img className="logo git" height={50} src={Others.gitHubImg} />
               </a>
             </span>
           </div>

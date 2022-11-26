@@ -29,19 +29,13 @@
   display: flex;
   align-items: center;
 }
-
-@media only screen and (max-width: 900px) {
-  .proyect .container {
-    flex-direction: column;
-  }
-}
-
 .proyect .container .image {
   width: 300px;
   height: 200px;
   border-radius: 50px;
   border: solid 3px gray;
 }
+
 .proyect .container .description {
   display: flex;
   flex-direction: column;
@@ -54,4 +48,24 @@
 .proyect .container .description .logo {
   display: flex;
   justify-content: space-between;
+}
+.proyect .container .description .logo.git:hover {
+  border: solid black 2px;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .proyect .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  /* Telefonos */
+  .proyect .container .image {
+    width: 215px;
+  }
+  .proyect .container .description .logo {
+    display: initial;
+  }
 }

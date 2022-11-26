@@ -4,12 +4,11 @@ import Modal from "react-modal";
 import { Fragment, useState } from "react";
 import closeModalImg from "../assets/cerrar.svg";
 
-function KnowledgeCarousel(carousel: Icarousel) {
+function KnowledgeCarousel({ images, title, windowSize }: Icarousel) {
   const [modal, setModal] = useState(false);
   const openModal = () => setModal(true);
   const closeModal = () => setModal(false);
 
-  let { images, title } = carousel;
   let deg: number = 360 / images.length;
   let rotate = deg * -1;
   return (
@@ -36,7 +35,13 @@ function KnowledgeCarousel(carousel: Icarousel) {
                   key={uuidv4()}
                   className="icon-cards__item   carousel-logo"
                   style={{
-                    transform: `rotateY(${rotate}deg) translateZ(20vw) `,
+                    transform: `rotateY(${rotate}deg) ${
+                      windowSize?.width != undefined && windowSize?.width <= 900
+                        ? windowSize.width <= 630
+                          ? "translateZ(45vw)"
+                          : "translateZ(30vw)"
+                        : " translateZ(20vw)"
+                    }  `,
                   }}
                 >
                   <img className="carousel-logo" src={logo} alt={logo} />

@@ -67,6 +67,10 @@ export const Background = { iotImg, djangoImg, snakeImg, tsJsImg };
 export interface Icarousel {
   title: string;
   images: string[];
+  windowSize?: {
+    width: number;
+    height: number;
+  };
 }
 
 export interface Iproyect {
