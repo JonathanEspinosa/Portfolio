@@ -141,7 +141,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       mediante una interfaz gr\xE1fica en visual Studio C++ para la
       utilizaci\xF3n de conocimientos en listas simples o doblemente
       enlazadas. El proyecto consta de manejo de archivos planos y
-      punteros para el uso de listas.`,image:Vo.snakeImg,toolsImg:[Ae.visualStudioImg,xn.cPlusPlusImg],gitUrl:"https://github.com/JonathanEspinosa/Snake-C-plus-plus"},{title:"Arquitectura de supervisi\xF3n de consumo energ\xE9tico basada en IoT",description:`Arquitectura que permita monitorizar y controlar el consumo 
+      punteros para el uso de listas.`,image:Vo.snakeImg,toolsImg:[Ae.visualStudioImg,xn.cPlusPlusImg],gitUrl:"https://github.com/JonathanEspinosa/Snake-C-plus-plus"},{title:"Proyecto de investigaci\xF3n - Tesis 'Arquitectura de supervisi\xF3n de consumo energ\xE9tico basada en IoT'",description:`Arquitectura que permita monitorizar y controlar el consumo 
       energ\xE9tico en edificios, utilizando dispositivos IoT.
       Aplicaci\xF3n web que a travez de microservicios y uso del protocolo mqtt interactua con 
       dispositivos IoT para la supervicion energetica.`,image:Vo.iotImg,toolsImg:[Lt.potgressImg,Vo.djangoImg,Ae.mqttImg,Ae.mosquittoImg,Lt.angularImg,Ae.primeNgImg,Vo.tsJsImg],gitUrl:"https://github.com/JonathanEspinosa/iot-web"}];return _("div",{className:"carousel",children:_(ku,{isRTL:!1,disableArrowsOnEnd:!1,children:e.map(t=>_(E0,{...t},po()))})})}var us={exports:{}},Ln={},cs={exports:{}},Ot={},bi={exports:{}};(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=p;/*!
