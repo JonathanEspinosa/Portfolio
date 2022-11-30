@@ -6,6 +6,15 @@
   background-color: rgb(51 106 137 / 50%) !important;
   box-shadow: 0 0 1px 3px #336a89 !important;
 }
+.hGRYOm:hover:enabled,
+.hGRYOm:focus:enabled {
+  background-color: #336a89 !important;
+}
+.goodpl {
+  background-color: rgb(51 106 137 / 50%) !important;
+  box-shadow: 0 0 1px 3px #336a89 !important;
+}
+
 .carousel {
   margin-top: 1%;
   margin-inline: 1%;
@@ -54,7 +63,7 @@
   border-radius: 25px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
   .proyect .container {
     flex-direction: column;
   }

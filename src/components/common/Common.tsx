@@ -28,6 +28,13 @@ import sqlImg from "../../assets/sql.png";
 import typescriptImg from "../../assets/typescript.png";
 import visualStudioCodeImg from "../../assets/visual_Studio_Code.png";
 import visualBasicImg from "../../assets/visual-basic.png";
+import linkedin from "../../assets/linkedin.png";
+import gitHubProfile from "../../assets/gitHubProfile.png";
+
+export const social= {
+  linkedin,
+  gitHubProfile, 
+};
 
 export const Language = {
   typescriptImg,

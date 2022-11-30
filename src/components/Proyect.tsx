@@ -19,7 +19,7 @@ function Proyect() {
       gitUrl: "https://github.com/JonathanEspinosa/Snake-C-plus-plus",
     },
     {
-      title: "Arquitectura de supervisión de consumo energético basada en IoT",
+      title: "Proyecto de investigación - Tesis 'Arquitectura de supervisión de consumo energético basada en IoT'",
       description: `Arquitectura que permita monitorizar y controlar el consumo 
       energético en edificios, utilizando dispositivos IoT.
       Aplicación web que a travez de microservicios y uso del protocolo mqtt interactua con 
