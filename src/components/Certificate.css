@@ -1,0 +1,21 @@
+.miniature-container {
+  border: 5px inset #336a89;
+  margin: 0.5rem;
+  border-radius: 15px;
+  padding-block: 0.5rem;
+  width: 100%;
+  height: 14rem;
+}
+@media only screen and (max-width: 900px) {
+  .miniature-container {
+    width: auto;
+  }
+}
+.miniature-container img {
+  width: 200px;
+  height: 150px;
+}
+.miniature-container:hover {
+  background-color: #33698931;
+  cursor: pointer;
+}
