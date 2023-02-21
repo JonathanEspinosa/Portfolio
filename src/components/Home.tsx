@@ -11,18 +11,22 @@ function Home() {
             <h1>Jonathan Espinosa</h1>
             <h2>Ing. Sistemas e Informatica | Desarrollador Web</h2>
             <span>
-              <a href="https://www.linkedin.com/in/jonathan-espinosa-mieles" 
+              <a
+                href="https://www.linkedin.com/in/jonathan-espinosa-mieles"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <img
                   className="social-img"
                   src={social.linkedin}
                   alt={social.linkedin}
                 />
               </a>
-              <a href="https://github.com/JonathanEspinosa" 
+              <a
+                href="https://github.com/JonathanEspinosa"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <img
                   className="social-img"
                   src={social.gitHubProfile}
@@ -36,13 +40,13 @@ function Home() {
         <div className="card">
           <span className="about">
             <p>
-              Bienvenido a mi portfolio, aquí podras ver un poco de mi, los
-              lenguajes y herramientas con los que estoy familarizado y mi
+              Bienvenido a mi portfolio, aquí podrás ver un poco de mí, los
+              lenguajes y herramientas con los que estoy familiarizado y mi
               experiencia laboral.
             </p>
             <p>
-              Acabo de titularme de Ing. Sistemas e Informatica por mi amor
-              hacia la tecnologia y programación, si capto tu atencion y tienes
+              Acabo de titularme de Ing. Sistemas e Informática por mi amor
+              hacia la tecnología y programación, si capto tu atención y tienes
               un lugar donde pueda continuar mi crecimiento profesional no dudes
               en llamarme, te aseguro buenos resultados.
             </p>
@@ -54,6 +58,7 @@ function Home() {
       <div className="menu">
         <a href="#conocimiento">Conocimientos</a>
         <a href="#experiencia">Experiencia laboral</a>
+        <a href="#estudios">Estudios</a>
         <a href="#proyectos">Proyectos</a>
 
         {/* <a href="#news">Formación académica</a> */}

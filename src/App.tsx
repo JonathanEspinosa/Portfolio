@@ -1,9 +1,10 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Home from "./components/Home";
 import WorkExperience from "./components/WorkExperience";
 import Container from "./components/common/Container";
 import Proyect from "./components/Proyect";
 import Knowledge from "./components/Knowledge";
+import Certificate from "./components/Certificate";
 
 function App() {
   //   Home
@@ -20,30 +21,35 @@ function App() {
   //            (Fotito, que hace, proposito y enlace de github)
   // contacto
   //             (Buscar recibir un correo y tal vez numero celular)
-
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+  const handleResize = () => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <Fragment>
       <Home></Home>
-
       <Container id="conocimiento" title="Conocimientos" pos="center">
-        <Knowledge />
+        <Knowledge {...windowSize} />
       </Container>
-
       <Container id="experiencia" title="Experiencia laboral">
         <WorkExperience />
       </Container>
-
-      <Container id="proyectos" title="Proyectos" pos="end">
+      <Container id="estudios" title="Estudios" pos="end">
+        <Certificate {...windowSize} />
+      </Container>
+      <Container id="proyectos" title="Proyectos">
         <Proyect />
       </Container>
-      {/* <Container title="Formación académica" pos="end">
-        <WorkExperience />
-      </Container> */}
     </Fragment>
   );
-}
-{
-  /* style={{backgroundColor:"#133549"}} >  */
 }
 
 export default App;

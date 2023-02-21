@@ -31,9 +31,29 @@ import visualBasicImg from "../../assets/visual-basic.png";
 import linkedin from "../../assets/linkedin.png";
 import gitHubProfile from "../../assets/gitHubProfile.png";
 
-export const social= {
+import appMovile from "../../assets/certificates/Desarrollo-de-Apps-Moviles.jpg";
+import web1 from "../../assets/certificates/Desarrollo-Web-HTML-y-CSS-I.jpg";
+import web2 from "../../assets/certificates/Desarrollo-Web-HTML-y-CSS-II.jpg";
+import react from "../../assets/certificates/React.jpg";
+import scrum from "../../assets/certificates/Scrum-Foundation-Professional-Certificate-(SFPC).jpg";
+import javascript from "../../assets/certificates/The-Complete-Full-Stack-JavaScript-Course.jpg";
+import degree from "../../assets/certificates/Titulo-Ing-Sistemas-e-Informatica.jpg";
+import xamarin from "../../assets/certificates/xamarin.jpg";
+
+export const certificatesMiniature = {
+  appMovile,
+  web1,
+  web2,
+  react,
+  scrum,
+  javascript,
+  degree,
+  xamarin,
+};
+
+export const social = {
   linkedin,
-  gitHubProfile, 
+  gitHubProfile,
 };
 
 export const Language = {
@@ -74,10 +94,11 @@ export const Background = { iotImg, djangoImg, snakeImg, tsJsImg };
 export interface Icarousel {
   title: string;
   images: string[];
-  windowSize?: {
-    width: number;
-    height: number;
-  };
+  windowSize?: IwindowSize;
+}
+export interface IwindowSize {
+  width: number;
+  height: number;
 }
 
 export interface Iproyect {
@@ -86,4 +107,10 @@ export interface Iproyect {
   image: string;
   toolsImg: string[];
   gitUrl: string;
+}
+
+export interface Icertificate {
+  title: string;
+  image: string;
+  url: string;
 }

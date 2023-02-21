@@ -2,7 +2,11 @@ import { Icertificate } from "./common/Common";
 
 function CertificateItem(certificate: Icertificate) {
   return (
-    <div className="miniature-container">
+    <div
+      title="Ver certificado"
+      className="miniature-container"
+      onClick={() => window.open(certificate.url)}
+    >
       <img
         className="miniature"
         src={certificate.image}
